@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kembang Yuanmar - Menyediakan perlengkapan duka lengkap seperti bunga papan, peti jenazah, dan baju jenazah.">
+  <title>Kembang Yuanmar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f3f3f3;
+      color: #333;
+    }
+    header {
+      background: #6b4f4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #a67878;
+      flex-wrap: wrap;
+    }
+    nav a {
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover,
+    nav a.active {
+      background: #8c5c5c;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .products-category {
+      margin-bottom: 40px;
+    }
+    .products-category h3 {
+      border-bottom: 2px solid #a67878;
+      padding-bottom: 6px;
+      color: #6b4f4f;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .product {
+      background: #fff8f8;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: calc(25% - 20px);
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 10px;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .product h4 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      font-size: 14px;
+      color: #6b4f4f;
+    }
+    .price {
+      font-weight: bold;
+      color: #853535;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      width: fit-content;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #6b4f4f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #5a3f3f;
+    }
+    footer {
+      background: #6b4f4f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    @media(max-width: 800px) {
+      .product {
+        width: 100%;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body onload="showSection('home')">
+
+<header>
+  <h1>KEMBANG YUANMAR</h1>
+  <p><em><strong>ALAMAT</strong></em></p>
+  <p><em><strong>Lorong Permata, Desa.Bangunan Wuwuk, Kec.Modayag Barat, Kab.Bolaang Mongondow Timur</strong></em></p>
+</header>
+
+<!-- Navigation Menu -->
+<nav>
+  <a href="#" onclick="showSection('home'); return false;">Beranda</a>
+  <a href="#" onclick="showSection('products'); return false;">Produk</a>
+  <a href="#" onclick="showSection('contact'); return false;">Kontak</a>
+  <a href="#" onclick="showSection('sosmed'); return false;">Akun Sosmed</a>
+</nav>
+
+<main>
+  <!-- Beranda Section -->
+  <section id="home" class="active">
+    <h2>Selamat Datang</h2>
+    <p><strong>Kami menyediakan berbagai jenis bunga papan , bunga standing, karangan bunga,dekorasi duka, serta perlengkapan duka lainnya. Pelayanan cepat, harga terjangkau.</strong></p>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="products">
+    <h2>Produk Kami</h2>
+
+    <!-- Paket Dekorasi -->
+    <div class="products-category">
+      <h3>Paket Dekorasi</h3>
+      <div class="products">
+        <div class="product"><img src="Produk1.jpg" alt="Dekorasi 1"><h4>Dekorasi 1</h4><p class="price">Rp 1.000.000</p></div>
+        <div class="product"><img src="images/paket2.jpg" alt="Dekorasi 2"><h4>Dekorasi 2</h4><p class="price">Rp 1.200.000</p></div>
+        <div class="product"><img src="images/paket3.jpg" alt="Dekorasi 3"><h4>Dekorasi 3</h4><p class="price">Rp 1.400.000</p></div>
+        <div class="product"><img src="images/paket4.jpg" alt="Dekorasi 4"><h4>Dekorasi 4</h4><p class="price">Rp 1.600.000</p></div>
+      </div>
+    </div>
+
+    <!-- Peti Jenazah -->
+    <div class="products-category">
+      <h3>Peti Jenazah</h3>
+      <div class="products">
+        <!-- 10 contoh produk peti jenazah -->
+        <!-- Format seperti paket dekorasi -->
+        <!-- Hanya 4 ditampilkan, sisanya dapat ditambahkan sesuai kebutuhan -->
+        <div class="product"><img src="images/peti1.jpg" alt="Peti 1"><h4>Peti 1</h4><p class="price">Rp 3.500.000</p></div>
+        <div class="product"><img src="images/peti2.jpg" alt="Peti 2"><h4>Peti 2</h4><p class="price">Rp 3.800.000</p></div>
+        <div class="product"><img src="images/peti3.jpg" alt="Peti 3"><h4>Peti 3</h4><p class="price">Rp 4.000.000</p></div>
+        <div class="product"><img src="images/peti4.jpg" alt="Peti 4"><h4>Peti 4</h4><p class="price">Rp 4.200.000</p></div>
+      </div>
+    </div>
+
+    <!-- Karangan Bunga -->
+    <div class="products-category">
+      <h3>Karangan Bunga</h3>
+      <div class="products">
+        <!-- 10 contoh produk karangan bunga -->
+        <div class="product"><img src="images/karangan1.jpg" alt="Karangan 1"><h4>Karangan 1</h4><p class="price">Rp 700.000</p></div>
+        <div class="product"><img src="images/karangan2.jpg" alt="Karangan 2"><h4>Karangan 2</h4><p class="price">Rp 750.000</p></div>
+        <div class="product"><img src="images/karangan3.jpg" alt="Karangan 3"><h4>Karangan 3</h4><p class="price">Rp 800.000</p></div>
+        <div class="product"><img src="images/karangan4.jpg" alt="Karangan 4"><h4>Karangan 4</h4><p class="price">Rp 850.000</p></div>
+      </div>
+    </div>
+
+    <!-- Baju Jenazah -->
+    <div class="products-category">
+      <h3>Baju Jenazah</h3>
+      <div class="products">
+        <div class="product"><img src="images/baju1.jpg" alt="Baju Pria"><h4>Baju Pria</h4><p class="price">Rp 150.000</p></div>
+        <div class="product"><img src="images/baju2.jpg" alt="Baju Wanita"><h4>Baju Wanita</h4><p class="price">Rp 150.000</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="contact">
+    <h2>Hubungi Kami</h2>
+    <form onsubmit="return submitForm(event)">
+      <label for="name">Nama</label>
+      <input type="text" id="name" required />
+
+      <label for="address">Alamat</label>
+      <input type="text" id="address" required />
+
+      <label for="phone">No. Telepon</label>
+      <input type="tel" id="phone" pattern="^08[0-9]{8,11}$" title="Harus dimulai dengan 08" required />
+
+      <label for="message">Pesan</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Sosial Media Section -->
+  <section id="sosmed">
+    <h2>Akun Sosial Media</h2>
+    <!-- Tambahkan akun sosial media Anda di bawah ini -->
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
+    </ul>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Kembang Yuanmar. All Rights Reserved.
+</footer>
+
+<script>
+// Fungsi untuk menampilkan bagian sesuai menu yang dipilih
+function showSection(id) {
+  document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  document.querySelectorAll("nav a").forEach(link => {
+    link.classList.remove("active");
+    if (link.textContent.toLowerCase().includes(id)) link.classList.add("active");
+  });
+}
+
+// Fungsi pengiriman form melalui WhatsApp
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const address = document.getElementById('address').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+  const text = encodeURIComponent(`Halo, saya ${name}\nAlamat: ${address}\nTelepon: ${phone}\nPesan: ${message}`);
+  window.open(`https://wa.me/6285340397872?text=${text}`, '_blank');
+}
+</script>
+</body>
+</html>
